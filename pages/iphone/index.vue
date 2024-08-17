@@ -6,7 +6,7 @@
                 <img width="200" :src="`/images/${iphone}.webp`" alt="">
             </div>
         </nuxt-link>
-
+        <!-- data::{{ data }} -->
        
     </div>
 </template>
@@ -15,7 +15,11 @@
 useHead({
     title: 'Nuxt3 - Iphones'
 })
-const iphones =['iphone-12','iphone-12-pro','iphone-13','iphone-13-pro']
-const {data} = useFetch("server/api/iphones")
-console.log("🚀 ~ data:", data.value)
+
+const iphones=['iphone-12','iphone-12-pro','iphone-13','iphone-13-pro']
+
+//IMPORTANT👇👇
+// const { data } = await useFetch('/hello')
+// const iphones =data
+// console.log("🚀 ~ data:", data.value)
 </script>
