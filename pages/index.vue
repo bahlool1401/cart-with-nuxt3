@@ -1,7 +1,7 @@
 <template>
-    <div>indexxxxx</div>
+    <div>Home page ✌</div>
     
-    <button @click="page">go to about</button>
+    <!-- <button @click="page">go to about</button> -->
 
 </template>
 
